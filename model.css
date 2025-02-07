@@ -1,0 +1,861 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  background-color: #111222;
+}
+
+.navbar {
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 12%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 12px;
+  /* margin: 20px; */
+}
+
+/* .nav__list{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #33333327;
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .nav__list li{
+    width: 100%;
+  } 
+  .nav___close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav__toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  } */
+
+.navbar ul li a {
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+  /* padding: 0 10px; */
+  margin: 0 20px;
+  position: relative;
+  font-size: 20px;
+  padding-bottom: 6px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.navbar a::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.6s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+/* ----------------------------------------------------------- */
+.navbar .profile {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar li a i {
+  text-decoration: none;
+  font-size: 27px;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+  display: inline-block;
+  /* margin: 12px; */
+  /* background-color: transparent; */
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------ */
+.content {
+  width: 100%;
+  position: absolute;
+  color: white;
+  /* top: 45%; */
+  bottom: -1%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  text-align: center;
+}
+
+/* ================================CURVEE.EV SECTION================================================================== */
+.body {
+  /* margin: 100px; */
+  font-family: "Poppins", sans-serif;
+  /* background-color: #1F1B3D; */
+  /* color: #fff; */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 649px;
+  height: 516px;
+  margin-left: 140px;
+  color: #8c92b8;
+  z-index: 0;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.text-section {
+  background-color: #8c92b8;
+  color: #1f1b3d;
+  padding: 20px;
+  width: 649px;
+  height: 516px;
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  margin-bottom: 20px;
+}
+
+.text-section h1 {
+  font-size: 2.5em;
+  color: #101970;
+  font-weight: 550;
+  margin: 0;
+}
+
+.text-section p strong {
+  font-size: 1.1em;
+  margin: 10px 0 20px;
+  color: black;
+}
+.text-section p {
+  margin: 10px;
+}
+.text-section a {
+  text-decoration: none;
+  color: black;
+  /* width: 250px; */
+  /* height: 200px; */
+  margin-right: 12px;
+  margin-left: 12px;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.text-section a:hover {
+  color: #cfd1e7;
+}
+.text-sec {
+  width: 350px;
+  height: 250px;
+  margin: 30px;
+}
+.sec1 {
+  width: 350px;
+  height: 250px;
+  margin-left: 32px;
+}
+.container1 {
+  background-color: #383d6a;
+  color: #1f1b3d;
+  padding: 20px;
+  width: 491px;
+  height: 516px;
+  margin-right: -33.2rem;
+  z-index: 0;
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  /* margin-bottom: 20px; */
+}
+
+.car-image {
+  /* background-color: #4C4673; */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -50px;
+  margin-right: -33rem;
+  z-index: 1;
+}
+
+.car-image img {
+  /* max-width: 620px;
+    height: 429px; */
+  /* width: 90%; */
+  margin-top: -50rem;
+  margin-left: 20rem;
+  border-radius: 10px;
+}
+
+/* .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
+.bottom-section .car-image1 {
+  /* flex: 1; */
+  width: 612px;
+  height: 370px;
+  margin-top: 1.25rem;
+  margin-left: 10rem;
+  z-index: 2;
+}
+.bottom-section .car-image2 {
+  /* flex: 1; */
+  /* width: 612px; */
+  height: 370px;
+  margin-top: -23.15rem;
+  margin-left: 35.7rem;
+  z-index: 0;
+}
+
+/* =================================PUNCH.EV=========================== */
+.body {
+  /* margin: 100px; */
+  font-family: "Poppins", sans-serif;
+  /* background-color: #1F1B3D; */
+  /* color: #fff; */
+}
+
+.punch-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 490px;
+    height: 516px;
+    margin-left: 140px;
+    color: #8c92b8;
+    z-index: 0;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .punch-text-section {
+    background-color: #5a5a4f;
+    color: black;
+    padding: 20px;
+    width: 490px;
+    height: 516px;
+    /* max-width: 600px; */
+    /* border-radius: 10px; */
+    /* margin-bottom: 20px; */
+    margin-top: -20.7rem;
+    margin-left: -31.9rem;
+  }
+  
+  .punch-text-sec h1 {
+    font-size: 3rem;
+    color: #383836;
+    font-weight: 550;
+    margin-left: -70rem;
+    margin: 0;
+  }
+  
+  .punch-text-sec p strong {
+    font-size: 1.1em;
+    margin: 10px 0 20px;
+    color: black;
+  }
+  .punch-text-sec p {
+    margin: 10px;
+  }
+  .punch-sec1 a {
+    text-decoration: none;
+    color: black;
+    /* width: 250px; */
+    /* height: 200px; */
+    margin-right: 12px;
+    margin-left: 12px;
+    text-decoration: underline;
+    transition: 0.4s;
+  }
+  .punch-sec1 a:hover {
+    color: #cbcbcb;
+  }
+  .punch-text-sec {
+    width: 350px;
+    height: 250px;
+    margin: 30px;
+  }
+  .punch-sec1 {
+    width: 350px;
+    height: 250px;
+    margin-left: 7rem;
+    margin-top: 49px;
+  }
+  .punch-container1 {
+    background-color: #c1c2bc;
+    color: black;
+    padding: 20px;
+    width: 651px;
+    height: 516px;
+    margin-right: -73.8rem;
+    z-index: 0;
+    /* max-width: 600px; */
+    /* border-radius: 10px; */
+    /* margin-bottom: 20px; */
+  }
+  .punch-car-image {
+    /* background-color: #4C4673; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -15px;
+    margin-left: -1rem;
+    z-index: 1;
+  }
+  
+  .punch-car-image img {
+    /* max-width: 620px;
+      height: 429px; */
+    /* width: 450px; */
+    /* margin-top: -50rem;
+    margin-left: 20rem; */
+    border-radius: 10px;
+  }
+  
+  /* .bottom-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  } */
+  
+  .punch-bottom-section .car-image23 {
+    /* flex: 1; */
+    width: 612px;
+    height: 370px;
+    margin-top: -23.2rem;
+    margin-left: 40rem;
+    z-index: 2;
+  }
+  .punch-bottom-section .car-image14 {
+    /* flex: 1; */
+    /* width: 612px; */
+    height: 370px;
+    /* margin-top: -23.15rem; */
+    /* margin-left: 25.8rem; */
+    z-index: 0;
+  }
+  
+
+/* ==========================NEXON.EV=================================== */
+.body {
+  /* margin: 100px; */
+  font-family: "Poppins", sans-serif;
+  /* background-color: #1F1B3D; */
+  /* color: #fff; */
+}
+.nexon-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 649px;
+  height: 516px;
+  margin-left: 140px;
+  color: #739313;
+  z-index: 0;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 24rem;
+}
+.nexon-text-section {
+  background-color: #a6a7a3;
+  color: #353533;
+  padding: 20px;
+  width: 649px;
+  height: 516px;
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  margin-bottom: 20px;
+}
+
+.nexon-text-section h1 {
+  font-size: 2.5em;
+  color: #353533;
+  font-weight: 550;
+  margin: 10px;
+}
+
+.nexon-text-section p strong {
+  font-size: 1.1em;
+  margin: 10px 0 20px;
+  color: black;
+}
+.nexon-text-section p {
+  margin: 10px;
+}
+.nexon-text-section a {
+  text-decoration: none;
+  color: black;
+  /* width: 250px; */
+  /* height: 200px; */
+  margin-right: 12px;
+  margin-left: 12px;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.nexon-text-section a:hover {
+  color: #cfd1e7;
+}
+.text-sec {
+  width: 350px;
+  height: 250px;
+  margin: 30px;
+}
+.sec11 {
+  width: 350px;
+  height: 250px;
+  margin-left: 32px;
+}
+.container2 {
+  background-color: #454545;
+  color: #1f1b3d;
+  padding: 20px;
+  width: 491px;
+  height: 516px;
+  margin-right: -33.2rem;
+  z-index: 0;
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  /* margin-bottom: 20px; */
+}
+
+.nexon-car-image1 {
+  /* background-color: #4C4673; */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -50px;
+  margin-right: -33rem;
+  z-index: 1;
+}
+
+.nexon-car-image1 img {
+  /* max-width: 620px;
+    height: 429px; */
+  /* width: 90%; */
+  margin-top: -50rem;
+  margin-left: 20rem;
+  border-radius: 10px;
+}
+
+/* .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
+.bottom-section1 .car-image12 {
+  /* flex: 1; */
+  width: 612px;
+  height: 370px;
+  margin-top: 1.25rem;
+  margin-left: 10rem;
+  z-index: 2;
+}
+.bottom-section1 .car-image21 {
+  /* flex: 1; */
+  /* width: 612px; */
+  height: 370px;
+  margin-top: -23.15rem;
+  margin-left: 35.7rem;
+  z-index: 0;
+}
+
+/* ==================TIAGO.EV================================== */
+.body {
+  /* margin: 100px; */
+  font-family: "Poppins", sans-serif;
+  /* background-color: #1F1B3D; */
+  /* color: #fff; */
+}
+
+.punch-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 490px;
+    height: 516px;
+    margin-left: 140px;
+    color: #8c92b8;
+    z-index: 0;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .taigo-text-section {
+    background-color: #3d4045;
+    color: black;
+    padding: 20px;
+    width: 490px;
+    height: 516px;
+    /* max-width: 600px; */
+    /* border-radius: 10px; */
+    /* margin-bottom: 20px; */
+    margin-top: -20.7rem;
+    margin-left: -31.9rem;
+  }
+  
+  .punch-text-sec h1 {
+    font-size: 3rem;
+    color: #383836;
+    font-weight: 550;
+    margin-left: -70rem;
+    margin: 0;
+  }
+  
+  .punch-text-sec p strong {
+    font-size: 1.1em;
+    margin: 10px 0 20px;
+    color: black;
+  }
+  .punch-text-sec p {
+    margin: 10px;
+  }
+  .punch-text-sec a {
+    text-decoration: none;
+    color: black;
+    /* width: 250px; */
+    /* height: 200px; */
+    margin-right: 12px;
+    margin-left: 12px;
+    text-decoration: underline;
+    transition: 0.4s;
+  }
+  .punch-text-sec a:hover {
+    color: #cfd1e7;
+  }
+  .punch-text-sec {
+    width: 350px;
+    height: 250px;
+    margin: 30px;
+  }
+  .punch-sec1 {
+    width: 350px;
+    height: 250px;
+    margin-left: 7rem;
+    margin-top: 49px;
+  }
+  .taigo-container1 {
+    background-color: #7c8d9f;
+    color: black;
+    padding: 20px;
+    width: 651px;
+    height: 516px;
+    margin-right: -73.8rem;
+    z-index: 0;
+    /* max-width: 600px; */
+    /* border-radius: 10px; */
+    /* margin-bottom: 20px; */
+  }
+  .punch-car-image {
+    /* background-color: #4C4673; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -15px;
+    margin-left: -1rem;
+    z-index: 1;
+  }
+  
+  .punch-car-image img {
+    /* max-width: 620px;
+      height: 429px; */
+    /* width: 450px; */
+    /* margin-top: -50rem;
+    margin-left: 20rem; */
+    border-radius: 10px;
+  }
+  
+  /* .bottom-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  } */
+  
+  .punch-bottom-section .car-image23 {
+    /* flex: 1; */
+    width: 612px;
+    height: 370px;
+    margin-top: -23.2rem;
+    margin-left: 40rem;
+    z-index: 2;
+  }
+  .punch-bottom-section .car-image14 {
+    /* flex: 1; */
+    /* width: 612px; */
+    height: 370px;
+    /* margin-top: -23.15rem; */
+    /* margin-left: 25.8rem; */
+    z-index: 0;
+  }
+  
+
+
+/*===================TIGOR.EV======================================== */
+.body {
+  /* margin: 100px; */
+  font-family: "Poppins", sans-serif;
+  /* background-color: #1F1B3D; */
+  /* color: #fff; */
+}
+
+.tigor-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 649px;
+  height: 516px;
+  margin-left: 140px;
+  color: #8c92b8;
+  z-index: 0;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 24rem;
+}
+
+.tigor-text-section {
+  background-color: #955659;
+  color: black;
+  padding: 20px;
+  width: 649px;
+  height: 516px;
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  margin-bottom: 20px;
+}
+
+.tigor-text-section h1 {
+  font-size: 2.5em;
+  color: black;
+  font-weight: 550;
+  margin: 0;
+}
+
+.tigor-text-section p strong {
+  font-size: 1.1em;
+  margin: 10px 0 20px;
+  color: black;
+}
+.tigor-text-section p {
+  margin: 10px;
+}
+.tigor-text-section a {
+  text-decoration: none;
+  color: black;
+  /* width: 250px; */
+  /* height: 200px; */
+  margin-right: 12px;
+  margin-left: 12px;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.tigor-text-section a:hover {
+  color: #cfd1e7;
+}
+.tigor-text-sec {
+  width: 350px;
+  height: 250px;
+  margin: 30px;
+}
+.tigor-sec1 {
+  width: 350px;
+  height: 250px;
+  margin-left: 32px;
+}
+.tigor-container1 {
+  background-color: #5a2222;
+  color: black;
+  padding: 20px;
+  width: 491px;
+  height: 516px;
+  margin-right: -33.2rem;
+  z-index: 0;
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  /* margin-bottom: 20px; */
+}
+
+.tigor-car-image {
+  /* background-color: #4C4673; */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -50px;
+  margin-right: -33rem;
+  z-index: 1;
+}
+
+.tigor-car-image img {
+  /* max-width: 620px;
+    height: 429px; */
+  /* width: 450px; */
+  margin-top: -50rem;
+  margin-left: 20rem;
+  border-radius: 10px;
+}
+
+/* .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
+.tigor-bottom-section .car-image13 {
+  /* flex: 1; */
+  width: 612px;
+  height: 370px;
+  margin-top: 1.25rem;
+  margin-left: 10rem;
+  z-index: 2;
+}
+.tigor-bottom-section .car-image22 {
+  /* flex: 1; */
+  /* width: 612px; */
+  height: 370px;
+  margin-top: -23.15rem;
+  margin-left: 35.7rem;
+  z-index: 0;
+}
+
+/* ==========================FOOTER SECTION========================= */
+.containe {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul .foot {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #393f7f;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links1 a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+/* .fab{
+  font-size: 20px;
+} */
+.footer-col .social-links1 a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+

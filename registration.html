@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Drive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+        <!-- =================REMIX ICON ========================== -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <!-- =====================font awesome link======================== -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+
+    <div class="cmp-container">
+
+        <div class="tml-title">
+
+            <div class="tml-cmp-title  " initializer="CmpTitle">
+                <h4 class="cmp-title__text">
+                    Choose your experience
+                </h4>
+            </div>
+
+
+
+        </div>
+        <div class="tml-text-text">
+            <div>
+                <!-- Text Component starts here -->
+                <div class="Graphite">
+                    <p style="text-align: center;">Our vehicles are all about the experience. Take our premium test
+                        drive to get a feel or explore the unique features at leisure with our extended test drive.
+                        Don’t forget to select your city in the menu below for availability and accurate pricing!</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="test-drive">
+            <img src="test drive.webp" alt="">
+        </div>
+
+        <hr>
+
+
+        <div class="cities">
+
+            <div class="city">
+                <h2>Select a Location for Tata Motors Showroom</h2>
+                <form>
+                    <label for="tata-showroom" class="showroom" style="font-size: 22px;">City:</label>
+                    <select id="tata-showroom" class="tata-showroom" name="tata-showroom" placeholder="Choose Location">
+                        <option value="mumbai_andheri">Mumbai - Andheri</option>
+                        <option value="mumbai_bandra">Mumbai - Bandra</option>
+                        <option value="delhi_south_ex">Delhi - South Extension</option>
+                        <option value="delhi_rohini">Delhi - Rohini</option>
+                        <option value="bangalore_whitefield">Bangalore - Whitefield</option>
+                        <option value="bangalore_jayanagar">Bangalore - Jayanagar</option>
+                        <option value="chennai_tambaram">Chennai - Tambaram</option>
+                        <option value="chennai_anna_nagar">Chennai - Anna Nagar</option>
+                        <option value="kolkata_salt_lake">Kolkata - Salt Lake</option>
+                        <option value="kolkata_gariahat">Kolkata - Gariahat</option>
+                        <option value="pune_kothrud">Pune - Kothrud</option>
+                        <option value="pune_hinjewadi">Pune - Hinjewadi</option>
+                        <option value="hyderabad_banjara_hills">Hyderabad - Banjara Hills</option>
+                        <option value="hyderabad_secunderabad">Hyderabad - Secunderabad</option>
+                        <option value="ahmedabad_satellite">Ahmedabad - Satellite</option>
+                        <option value="ahmedabad_sg_highway">Ahmedabad - SG Highway</option>
+                        <option value="jaipur_malviya_nagar">Jaipur - Malviya Nagar</option>
+                        <option value="jaipur_vaishali_nagar">Jaipur - Vaishali Nagar</option>
+                        <option value="lucknow_hazratganj">Lucknow - Hazratganj</option>
+                        <option value="lucknow_gomti_nagar">Lucknow - Gomti Nagar</option>
+                        <option value="bhopal_mp_nagar">Bhopal - MP Nagar</option>
+                        <option value="kochi_edappally">Kochi - Edappally</option>
+                        <option value="indore_vijay_nagar">Indore - Vijay Nagar</option>
+                        <option value="nagpur_sitabuldi">Nagpur - Sitabuldi</option>
+                        <option value="surat_ghod_dod_road">Surat - Ghod Dod Road</option>
+                        <option value="noida_sector_18">Noida - Sector 18</option>
+                        <option value="gurugram_mg_road">Gurugram - MG Road</option>
+                        <option value="chandigarh_sector_22">Chandigarh - Sector 22</option>
+                        <option value="patna_boring_road">Patna - Boring Road</option>
+                        <option value="guwahati_gs_road">Guwahati - GS Road</option>
+                        <option value="vizag_dwaraka_nagar">Visakhapatnam - Dwaraka Nagar</option>
+                        <option value="coimbatore_race_course">Coimbatore - Race Course</option>
+                        <option value="vadodara_alkapuri">Vadodara - Alkapuri</option>
+                        <option value="nashik_gangapur_road">Nashik - Gangapur Road</option>
+                        <option value="aurangabad_cidco">Aurangabad - CIDCO</option>
+                        <option value="gwalior_lashkar">Gwalior - Lashkar</option>
+                        <option value="kanpur_civil_lines">Kanpur - Civil Lines</option>
+                        <option value="meerut_shastri_nagar">Meerut - Shastri Nagar</option>
+                        <option value="thrissur_mg_road">Thrissur - MG Road</option>
+                        <option value="mysore_krs_road">Mysore - KRS Road</option>
+                        <option value="rajkot_university_road">Rajkot - University Road</option>
+                        <option value="trivandrum_palayam">Trivandrum - Palayam</option>
+                        <option value="raipur_g_e_road">Raipur - G.E. Road</option>
+                        <option value="bhubaneswar_sahid_nagar">Bhubaneswar - Sahid Nagar</option>
+                        <option value="vijayawada_benz_circle">Vijayawada - Benz Circle</option>
+                        <option value="jamshedpur_bistupur">Jamshedpur - Bistupur</option>
+                        <option value="ranchi_lalpur">Ranchi - Lalpur</option>
+                        <option value="ludhiana_firozpur_road">Ludhiana - Firozpur Road</option>
+                        <option value="amritsar_ranjit_avenue">Amritsar - Ranjit Avenue</option>
+                        <option value="dehradun_rajpura_road">Dehradun - Rajpura Road</option>
+                        <option value="shimla_mall_road">Shimla - Mall Road</option>
+                        <option value="udaipur_fatehpura">Udaipur - Fatehpura</option>
+                        <option value="jodhpur_pal_road">Jodhpur - Pal Road</option>
+                    </select>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="card-body">
+            <h4 class="card-title">Standard Test Drive</h4>
+            <h6 class="card-subtitle">
+                Up to 1 Hour</h6>
+            <div class="card-text">
+                <p>Go on a test drive with one of our expert representatives. You can either drive out from the
+                    dealership itself or have the car reach your home. Either way, you’ll experience a drive like no
+                    other. </p>
+            </div>
+
+            <!-- <button class="select" >Select</button> -->
+            <!-- <button class="select-btn">Register My Interest </button> -->
+
+            <input type="submit" value="Submit" class="submit-input" id="submitInput">
+            <!-- 
+            <a href="">
+                <span>Learn more</span>
+                <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+            </a> -->
+
+        </div>
+
+        <hr>
+
+
+
+        <section class="registration-from">
+
+            <div class="question">
+                <h2>Still have questions?</h2>
+                <h3>
+                    Get in touch with our team of advisors to get more clarity and have all your questions answered.
+                    Here’s how you can reach us.</h3>
+            </div>
+            <div class="inner">
+                <form action="">
+                    <h3>Allow us to reach out to you!</h3>
+                    <h2>Fill in your contact details to hear from us at the earliest!​</h2>
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name" class="form-control" required>
+                        <input type="text" placeholder="Last Name" class="form-control" required>
+
+
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="text" placeholder="Email" class="form-control" required>
+                        <input type="text" placeholder="Pincode" class="form-control" required>
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="mobilenumber" placeholder="Mobile Number" class="form-control" required>
+
+                    </div>
+                    <div class="form-wrapper">
+                        <select name="" id="" class="form-control" required>
+                            <option value="" disabled selected>Models</option>
+                            <option value="male">Taigo.ev</option>
+                            <option value="femal">Tigor.ev</option>
+                            <option value="other">Nexon.ev</option>
+                            <option value="other">Punch.ev</option>
+                            <option value="other">Curve.ev</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox" style="font-size: 20px;" required>
+                        <label for="checkbox">I agree to the Terms and Conditions & Privacy policy by Tata Passenger
+                            Electric
+                            Mobility Limited.</label>
+                    </div>
+                    <div class="terms">
+                        <p>By clicking on accept, I acknowledge that I have read and accept the Terms and Conditions and
+                            Privacy Policy.Terms and Conditions</p>
+                        <a href="#">Terms and Conditions ~</a>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="checkbox" name="checkbox" style="font-size: 20px;">
+                        <label for="checkbox" style="color: white;">Whatsapp</label>
+                    </div>
+                    <button>Submit
+                    </button>
+                </form>
+            </div>
+    </div>
+    </section>
+
+    <div class="calling">
+        <div class="call">
+            <h2>Give us a call</h2>
+            <h3>If you feel more comfortable calling us, here are our numbers and operating hours.</h3>
+        </div>
+        <div class="call2">
+
+            <div class="call1">
+                <h3>   ~ Call</h3>
+                <h4>1800 209 8282</h4>
+                <h3>Mon - Fri, 8am - 6pm</h3>
+            </div>
+
+            <div class="call1">
+                <h3>~ WhatsApp</h3>
+                <h4>+91 97181 34142<h4>
+                        <h3>Mon - Fri, 8am - 6pm</h3>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ==================================FOOTER SECTION====================== -->
+<footer class="footer">
+    <div class="containe">
+        <div class="row1">
+            <div class="footer-col">
+                <h4>ORGANIZATION
+                </h4>
+                <ul class="foot">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Innovations</a></li>
+                    <li><a href="#">Our history</a></li>
+                    <li><a href="#">Our leadership</a></li>
+                </ul>
+            </div>
+            <!-- <div class="footer-col">
+                <h4>NEWSROOM</h4>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Press releases</a></li>
+                    <li><a href="#">Thought leadership</a></li>
+                    <li><a href="#">Media library</a></li>
+                </ul>
+            </div> -->
+            <div class="footer-col">
+                <h4>BUSINESS</h4>
+                <ul>
+                    <li><a href="#">Commercial vehicles</a></li>
+                    <li><a href="#">Passenger vehicles</a></li>
+                    <li><a href="#">Electric vehicles</a></li>
+                    <li><a href="#">Luxury vehicles</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Life @Tata Motors</a></li>
+                    <li><a href="#">Openings @Tata Motors</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links1">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
