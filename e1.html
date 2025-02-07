@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ..................FONT AWESOME ..............................-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Rubik+Glitch+Pop&display=swap");
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: "PT Sans", sans-serif;
+            border: none;
+        }
+
+
+        .vendor-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .vendor-row {
+            position: relative;
+            width: 440px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+            /* Add space between rows */
+            margin-right: 20px;
+            /* Add space between columns */
+            margin: 10px;
+        }
+
+        .vendor-row img {
+            width: 100%;
+            height: 100%;
+            gap: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .vendor-row .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(48, 66, 118, 0.6);
+            color: #fff;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .vendor-row:hover {
+            transform: scale(1.05);
+            font-size: 24px;
+        }
+
+        .vendor-row:hover img {
+            transform: scale(1.1);
+            font-size: 18px;
+        }
+
+        .vendor-row:hover .info {
+            transform: translateY(0);
+            font-size: 20px;
+        }
+
+        .book-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .book-btn:hover {
+            background-color: #641313;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <section class="vendor" id="vendor">
+        <div class="title">
+            <h1><span>O</span>verview</h1>
+        </div>
+        <div class="vendor-list">
+            <div class="vendor-row">
+                <img src="electric-front-charging-lid-new copy.webp" alt="">
+                <div class="info">
+                    <h2>Electric Front Charging Lid</h2>
+                    <p>The **Electric Front Charging Lid** offers a hassle-free charging experience with
+                        automated operation via motion sensors or a smartphone app.</p>
+                   
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="body-cladding-in-piano-black-finish.webp" alt="" style="flex-shrink: inherit;">
+                <div class="info">
+                    <h2>Body cladding in Piano Black Finish</h2>
+                    <p>Elevate your style with sleek Piano
+                        Black body
+                        cladding, adding a touch of refined elegance to every drive. </p>
+                   
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="flush-door-handles-1.webp" alt="">
+                <div class="info">
+                    <h2>Flush door handles</h2>
+                    <p>lush door handles
+                        Enhanced vehicle asthetics while adding to aerodynamic efficiency.</p>
+                   
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="r18-alloy-wheels-with-aero-inserts-2.webp" alt="">
+                <div class="info">
+                    <h2>R18 alloy wheels with Aero Inserts</h2>
+                    <p>Stylish, modern and aerodynamic design for a smooth and efficient drive.</p>
+                    
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="steering.webp" alt="">
+                <div class="info">
+                    <h2>Smart digital steering wheel</h2>
+                    <p>Superior Ergonomic experience with seamlessly integrated controls.</p>
+                  
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="phygital-control-panel-3.webp" alt="">
+                <div class="info">
+                    <h2>Phygital Control Panel</h2>
+                    <p>For simplified operation of essential
+                        functions.</p>
+                    
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="digital-dashboard-3.webp" alt="">
+                <div class="info">
+                    <h2>Digital Dashboard</h2>
+                    <p>Your Command Center for the long journeys
+                        ahead.</p>
+                    
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="smart-digital-shifter-2.webp" alt="">
+                <div class="info">
+                    <h2>Smart Digital Shifter</h2>
+                    <p>Sleek looks and a futuristic driving
+                        experience.</p>
+                    
+                </div>
+            </div>
+
+            <div class="vendor-row">
+                <img src="electric-orvm-with-autofold-1.webp" alt="">
+                <div class="info">
+                    <h2>Electric ORVM with Autofold</h2>
+                    <p>Improved driving experience with easy mirror control.</p>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+</body>
+
+</html>
