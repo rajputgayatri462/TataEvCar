@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- ================remix icon cdn ================= -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+  <link rel="shortcut icon" href="tata.svg" type="image/x-icon">
+
+  <!-- =====================font awesome link======================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    :root {
+      --header-height: 3.5rem;
+
+      /*========== Colors ==========*/
+      /*Color mode HSL(hue, saturation, lightness)*/
+      --first-color: hsl(219, 69%, 56%);
+      --first-color-alt: hsl(219, 69%, 52%);
+      --title-color: hsl(219, 8%, 95%);
+      --text-color: hsl(219, 8%, 75%);
+      --text-color-light: hsl(219, 4%, 55%);
+      --white-color: #fff;
+      --body-color: hsl(219, 4%, 4%);
+      --container-color: hsl(219, 4%, 7%);
+
+      /*========== Font and typography ==========*/
+      /*.5rem = 8px | 1rem = 16px ...*/
+      --body-font: 'Exo', sans-serif;
+      --h1-font-size: 1.5rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1rem;
+      --normal-font-size: .938rem;
+      --small-font-size: .813rem;
+      --smaller-font-size: .75rem;
+
+      /*========== Font weight ==========*/
+      --font-medium: 500;
+      --font-semi-bold: 600;
+
+      /*========== z index ==========*/
+      --z-tooltip: 10;
+      --z-fixed: 100;
+    }
+
+    @media screen and (min-width: 968px) {
+      :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+      }
+    }
+
+    /* HOME PAGE WITH VIDEO AS BACKGROUND */
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ............................................................ */
+
+    /* body {
+      font-family: var(--body-color);
+      font-size: var(--normal-font-size);
+      background-color: var(--body-color);
+      color: var(--text-color);
+      background: #111222;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--title-color);
+      font-weight: var(--font-semi-bold);
+    } */
+
+    .sec-slider {
+      width: 100%;
+      height: 100vh;
+      background-color: #111222;
+    }
+
+    .contain {
+      width: 100%;
+      min-height: 100vh;
+      padding: 0px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contain .sec-header {
+      position: relative;
+      width: 100%;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sec-header h1 {
+      font-size: calc(20px + 1.5vw);
+      /* font-size: 20px; */
+      color: #fff;
+      font-weight: 500;
+      margin-top: 10px;
+      /* text-transform: uppercase; */
+    }
+
+    .sec-header h3 {
+      font-size: 25px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .sec-header .navigation-btns {
+      align-self: flex-end;
+      user-select: none;
+    }
+
+    .sec-header .navigation-btns i {
+      display: inline-block;
+      padding: 10px 18px;
+      background-color: #334d8e;
+      color: #fff;
+      font-size: 32px;
+      border-radius: 23px;
+      cursor: pointer;
+      transition: 0.3s;
+      user-select: none;
+    }
+
+    .sec-header .navigation-btns i:hover {
+      background-color: #444664;
+    }
+
+    .sec-header .navigation-btns i:nth-child(1) {
+      margin-right: 5px;
+    }
+
+    .contain .slider {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      /* background-color: #464865; */
+      overflow: hidden;
+    }
+
+    .slider .slider-item {
+      /* width: 400px; */
+      max-height: 400px;
+      /* gap: 20px; */
+      border-radius: 15px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transition: left 0.5s cubic-bezier(0.645, 0.045, 0.345, 1);
+      overflow: hidden;
+    }
+
+    .slider-item:nth-child(1) {
+      left: calc(-600px + -40px);
+    }
+
+    .slider-item:nth-child(2) {
+      left: 0;
+    }
+
+    .slider-item:nth-child(3) {
+      left: calc(600px + 40px);
+    }
+
+    .slider-item:nth-child(4) {
+      left: calc((600px + 40px) * 2);
+    }
+
+    .slider-item:nth-child(5) {
+      left: calc((600px + 40px) * 3);
+    }
+
+    .slider-item:nth-child(6) {
+      left: calc((600px + 40px) * 4);
+    }
+
+    .slider-item:nth-child(7) {
+      left: calc((600px + 40px) * 5);
+    }
+
+    .slider-item:nth-child(8) {
+      left: calc((600px + 40px) * 6);
+    }
+
+    .slider-item:nth-child(9) {
+      left: calc((600px + 40px) * 7);
+    }
+
+    .slider-item:nth-child(10) {
+      left: calc((600px + 40px) * 8);
+    }
+
+    .slider-item:nth-child(11) {
+      left: calc((600px + 40px) * 9);
+    }
+
+    .slider-item:nth-child(12) {
+      left: calc((600px + 40px) * 10);
+    }
+
+    .slider-item:nth-child(13) {
+      left: calc((600px + 40px) * 11);
+    }
+
+    .slider-item:nth-child(14) {
+      left: calc((600px + 40px) * 12);
+    }
+
+    .slider-item:nth-child(15) {
+      left: calc((600px + 40px) * 13);
+    }
+
+    .slider-item img {
+      /* width: 100%; */
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .slider-item .desc {
+      position: absolute;
+      /* top: 343px; */
+      top: 0;
+      left: 0;
+      color: #ffffff;
+      width: 100%;
+      height: 100%;
+      padding: 30px 20px 30px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, 
+      rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.1) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    /* .slider-item .overlay .desc{
+      position: relative;
+    } */
+    .slider-item .overlay .desc h3{
+      font-size: 25px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="sec-slider">
+
+    <div class="contain">
+      <!-- ==================SECTION HEADER STARTS=============== -->
+      <header class="sec-header">
+        <div class="header-text">
+          <h1>Shaped to Drive Technological Advancement</h1>
+          <h3>Get entertainment and productivity on the go with modern tech.</h3>
+        </div>
+        <div class="navigation-btns">
+          <i class="fas fa-arrow-left" id="prev-btn"></i>
+          <i class="fas fa-arrow-right" id="next-btn"></i>
+        </div>
+      </header>
+      <!-- ==================SECTION HEADER ENDS==================== -->
+
+      <!-- ===================SLIDER STARTS======================== -->
+      <div class="slider">
+
+        <div class="slider-item">
+          <img src="v2v-charging-2.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Vehicle to Vehicle (V2V) Charging</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="slider-item">
+          <img src="v2l-5.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Vehicle to Load (V2L) Technology</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="slider-item">
+          <img src="31-24-cm-12-3-cinematic-touchscreen-by-harman-1.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Cinematic Touchscreen by HARMAN™</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slider-item">
+          <img src="multiple-voice-assistants.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Multiple Voice Assistants</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="slider-item">
+          <img src="alexa-voice-assist-new.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Alexa Voice Assist</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="slider-item">
+          <img src="wireless-smartphone-charger-2.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Wireless Smartphone Charger</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="slider-item">
+          <img src="air-purifier-with-aqi-display.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Air Purifier with AQI Display</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slider-item">
+          <img src="multi-dial-full-view-navigation.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Multi dial Full View Navigation</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slider-item">
+          <img src="26-03-cm-10-25-digital-cockpit-1.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Digital Cockpit</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slider-item">
+          <img src="high-quality-speakers-1.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>High quality speakers (9 speakers with subwoofer)</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-item">
+          <img src="electric-orvm-with-autofold-1.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Electric ORVM with Autofold</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-item">
+          <img src="ira-ev-and-smart-watch-connectivity.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>iRA.ev & Smart Watch^^ Connectivity</h3>
+            </div>
+          </div>
+        </div> 
+
+        <!-- <div class="slider-item">
+          <img src="artificial-reality2.webp" alt="">
+          <div class="overlay">
+
+            <div class="desc">
+              <h3>Arcade.ev app suite~</h3>
+            </div>
+          </div>
+        </div> -->
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!-- ===================SLIDER ENDS======================== -->
+
+
+    </div>
+  </section>
+
+<script>
+// ================REFRENCE TO BUTTONS=================================
+var btnLeft = document.getElementById('prev-btn');
+var btnRight = document.getElementById('next-btn');
+
+// ======================REFERENCE TO SLIDER============================
+var slider = document.querySelector('.contain .slider');
+
+btnRight.addEventListener('click' , nextSlide);
+function nextSlide(){
+  slider.appendChild(slider.firstElementChild);
+}
+
+btnLeft.addEventListener('click' , prevSlide);
+function prevSlide(){
+  slider.prepend(slider.lastElementChild);
+}
+
+// =================AUTO SLIDING =================================
+function autoSlide(){
+  deleteInterval = setInterval(timer , 2000);
+  function timer(){
+    nextSlide();
+  }
+}
+autoSlide();
+
+// ==================STOP AUTO SLIDING WHEN MOUSE IS OVER=============
+slider.addEventListener('mouseover',deleteAutoSliding);
+btnRight.addEventListener('mouseover',deleteAutoSliding);
+btnLeft.addEventListener('mouseover',deleteAutoSliding);
+
+function deleteAutoSliding(){
+  clearInterval(deleteInterval);
+}
+
+// ==============RESUME AUTO SLIDING WHEN MOUSE IS OUT===================
+slider.addEventListener('mouseout',resumeAutoSliding);
+btnRight.addEventListener('mouseout',resumeAutoSliding);
+btnLeft.addEventListener('mouseout',resumeAutoSliding);
+function resumeAutoSliding(){
+  autoSlide();
+  }
+
+</script>
+
+
+
+</body>
+
+</html>

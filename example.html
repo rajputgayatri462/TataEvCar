@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #111222;
+        }
+
+        section
+
+        /* sec-01*/
+            {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 100px;
+            color: #fff;
+        }
+
+        .container1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .main-title {
+            font-size: 4em;
+            margin-bottom: 50px;
+            margin-left: 29%;
+        }
+
+        .content1 {
+            position: relative;
+            width: 1150px;
+            display: flex;
+            margin-left: -50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content1 .image {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content1 .image img {
+            position: absolute;
+            /* z-index: 1; */
+
+            top: 0;
+            left: 0;
+            width: 75%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content1 .text-box {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 72%;
+            /* max-width: 400px; */
+            width: 300px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content1 .text-box h3 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content1 .text-box p {
+            font-size: 17px;
+        }
+
+        /* SECTION 2  */
+
+        .info-title {
+            font-size: 30px;
+            /* margin-left: 50px; */
+        }
+
+        .info {
+            width: 700px;
+            margin-left: 50px;
+        }
+
+        .content2 {
+            position: relative;
+            width: 1150px;
+            display: flex;
+            margin-left: 50%;
+            margin-top: -35%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content2 .image {
+            position: relative;
+            width: 120%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content2 .image img {
+            position: absolute;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            width: 75%;
+            height: 108%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content2 .info2 {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 73%;
+            /* max-width: 400px; */
+            width: 310px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content2 .info-title h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content2 .info2 .info-title p {
+            font-size: 70px;
+        }
+
+        /* SECTION 3 */
+        .info-title1 {
+            font-size: 32px;
+            /* margin-left: 50px; */
+        }
+
+        .info3 {
+            width: 700px;
+            margin-left: 50px;
+        }
+
+        .content3 {
+            position: relative;
+            width: 1150px;
+            display: flex;
+            margin-left: -45%;
+            margin-top: -20%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content3 .image {
+            position: relative;
+            width: 75%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content3 .image img {
+            position: absolute;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            width: 75%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content3 .info3 {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 70%;
+            /* max-width: 400px; */
+            width: 325px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content1 .text-box h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content1 .text-box p {
+            font-size: 17px;
+        }
+
+        /* SECTION 4 */
+        .info-title2 {
+            font-size: 32px;
+            /* margin-left: 50px; */
+        }
+
+        .info4 {
+            width: 700px;
+            margin-left: 50px;
+        }
+
+        .content4 {
+            position: relative;
+            width: 1150px;
+            display: flex;
+            margin-left: 34%;
+            margin-top: -35%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content4 .image {
+            position: relative;
+            width: 75%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content4 .image img {
+            position: absolute;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            width: 75%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content4 .info4 {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 70%;
+            /* max-width: 400px; */
+            width: 315px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content1 .text-box h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content1 .text-box p {
+            font-size: 17px;
+        }
+
+        /* SECTION 5 */
+        .info-title3 {
+            font-size: 32px;
+            /* margin-left: 50px; */
+        }
+
+        .info5 {
+            width: 700px;
+            margin-left: 50px;
+        }
+
+        .content5 {
+            position: relative;
+            width: 1150px;
+            display: flex;
+            margin-left: -40%;
+            margin-top: -22%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content5 .image {
+            position: relative;
+            width: 75%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content5 .image img {
+            position: absolute;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            width: 62%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content5 .info5 {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 55%;
+            /* max-width: 400px; */
+            width: 315px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content5 .text-box h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content5 .text-box p {
+            font-size: 17px;
+        }
+
+
+        
+        /* SECTION 6 */
+        .info-title4 {
+            font-size: 32px;
+            /* margin-left: 50px; */
+        }
+
+        .info6 {
+            width: 700px;
+            margin-left: 50px;
+        }
+
+        .content6 {
+            position: relative;
+            width: 1170px;
+            display: flex;
+            margin-left: 28%;
+            margin-top: -33%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content6 .image {
+            position: relative;
+            width: 75%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content6 .image img {
+            position: absolute;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            width: 85%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content6 .info6 {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 73%;
+            /* max-width: 400px; */
+            width: 315px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content5 .text-box h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content5 .text-box p {
+            font-size: 17px;
+        }
+
+
+        /* SECTION 7 */
+        .info-title5 {
+            font-size: 32px;
+            /* margin-left: 50px; */
+        }
+
+        .info7 {
+            width: 700px;
+            margin-left: 50px;
+        }
+
+        .content7 {
+            position: relative;
+            width: 1170px;
+            display: flex;
+            margin-left: -42%;
+            margin-top: -23%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content7 .image {
+            position: relative;
+            width: 75%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content7 .image img {
+            position: absolute;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content7 .info7 {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 65%;
+            /* max-width: 400px; */
+            width: 308px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content5 .text-box h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content5 .text-box p {
+            font-size: 17px;
+        }
+
+
+        
+        /* SECTION 8 */
+        .info-title6 {
+            font-size: 32px;
+            /* margin-left: 50px; */
+        }
+
+        .info8 {
+            width: 700px;
+            margin-left: 50px;
+        }
+
+        .content8 {
+            position: relative;
+            width: 1170px;
+            display: flex;
+            margin-left: 32%;
+            margin-top: -32%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content8 .image {
+            position: relative;
+            width: 75%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content8 .image img {
+            position: absolute;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .content8 .info8 {
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-left: 65%;
+            /* max-width: 400px; */
+            width: 310px;
+            height: 340px;
+            text-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+            font-size: 19px;
+        }
+
+        .content5 .text-box h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content5 .text-box p {
+            font-size: 17px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <section class="sec-01">
+        <div class="container1">
+            <h2 class="main-title">OVERVIEW ></h2>
+            <div class="content1">
+                <div class="image">
+                    <img src="electric-front-charging-lid-new.webp" alt="">
+                    <div class="text-box">
+                        <h3>Electric Front Charging Lid</h3>
+                        <p>The **Electric Front Charging Lid** offers a hassle-free charging experience with automated
+                            operation via motion sensors or a smartphone app.
+                            <!-- It features LED indicators to show charging status and a display to provide battery info like percentage and time left. With safety in mind, the lid includes obstruction detection to prevent damage, making it a convenient and smart solution for electric vehicle charging. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-02">
+        <div class="container1">
+            <!-- <h3 class="section-title">Body cladding in Piano Black Finish</h3> -->
+            <div class="content2">
+                <!-- <div class="content1"> -->
+                <div class="image">
+                    <img src="body-cladding-in-piano-black-finish.webp" alt="">
+                    <div class="info2">
+                        <h4 class="info-title">Body cladding in Piano Black Finish</h4>
+                        <p>Define your elegance with every drive.Elevate your style with sleek Piano Black body
+                            cladding, adding a touch of refined elegance to every drive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-03">
+        <div class="container1">
+            <!-- <h3 class="section-title">Body cladding in Piano Black Finish</h3> -->
+            <div class="content3">
+                <!-- <div class="content1"> -->
+                <div class="image">
+                    <img src="flush-door-handles-1.webp" alt="">
+                    <div class="info3">
+                        <h4 class="info-title1">Flush door handles</h4>
+                        <p>lush door handles
+                            Enhanced vehicle asthetics while adding to aerodynamic efficiency. They offer a sleek,
+                            modern look that complements the overall design, reducing drag and optimizing performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="sec-04">
+        <div class="container1">
+            <!-- <h3 class="section-title">Body cladding in Piano Black Finish</h3> -->
+            <div class="content4">
+                <!-- <div class="content1"> -->
+                <div class="image">
+                    <img src="r18-alloy-wheels-with-aero-inserts-2.webp" alt="">
+                    <div class="info4">
+                        <h4 class="info-title2">R18 alloy wheels with Aero Inserts
+                        </h4>
+                        <p>Stylish, modern and aerodynamic design for a smooth and efficient drive.Perfectly balancing form and function, they offer a refined, dynamic look that complements any vehicle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="sec-05">
+        <div class="container1">
+            <!-- <h3 class="section-title">Body cladding in Piano Black Finish</h3> -->
+            <div class="content5">
+                <!-- <div class="content1"> -->
+                <div class="image">
+                    <img src="steering.webp" alt="">
+                    <div class="info5">
+                        <h4 class="info-title3">Smart digital steering wheel
+                        </h4>
+                        <p>Superior Ergonomic experience with seamlessly integrated controls. extend. Allow you to access key functions without taking your hands off the wheel, enhancing both safety and convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-06">
+        <div class="container1">
+            <!-- <h3 class="section-title">Body cladding in Piano Black Finish</h3> -->
+            <div class="content6">
+                <!-- <div class="content1"> -->
+                <div class="image">
+                    <img src="phygital-control-panel-3.webp" alt="">
+                    <div class="info6">
+                        <h4 class="info-title4">Phygital Control Panel
+                        </h4>
+                        <p>For simplified operation of essential functions.Allows drivers to easily access and control key features such as climate settings, entertainment, and navigation. User-friendly interface</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-07">
+        <div class="container1">
+            <!-- <h3 class="section-title">Body cladding in Piano Black Finish</h3> -->
+            <div class="content7">
+                <!-- <div class="content1"> -->
+                <div class="image">
+                    <img src="digital-dashboard-3.webp" alt="">
+                    <div class="info7">
+                        <h4 class="info-title5">Digital Dashboard</h4>
+                        <p>Your Command Center for the long journeys ahead.Intuitively organized and fully customizable, allows you to access critical information and entertainment controls with ease, ensuring a smooth drive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="sec-08">
+        <div class="container1">
+            <!-- <h3 class="section-title">Body cladding in Piano Black Finish</h3> -->
+            <div class="content8">
+                <!-- <div class="content1"> -->
+                <div class="image">
+                    <img src="smart-digital-shifter-2.webp" alt="">
+                    <div class="info8">
+                        <h4 class="info-title6">Smart Digital Shifter</h4>
+                        <p>Sleek looks and a futuristic driving experience.Designed for both style and functionality, this advanced gear selector allows for smooth and effortless transitions between drive modes, all with a simple touch or motion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 600
+        });
+
+        // ================================ABOUT SECTION ===========================
+        // ==============MAIN TITLE =============================================
+        ScrollReveal().reveal('.main-title', { delay: 500, origin: 'left' });
+
+        // ========================SECTION 01 ===================================
+        ScrollReveal().reveal('.sec-01 .image', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+
+        // ============================SECTION 02 ===============================
+        ScrollReveal().reveal('.sec-02 .image', { delay: 900, origin: 'top' });
+        ScrollReveal().reveal('.info2', { delay: 1000, origin: 'left', interval: 200 });
+
+        // ==============================SECTION 03=============================
+        ScrollReveal().reveal('.sec-03 .image', { delay: 900, origin: 'left' });
+        ScrollReveal().reveal('.info3', { delay: 1000, origin: 'down', interval: 200 });
+
+        // ==============================SECTION 04=============================
+        ScrollReveal().reveal('.sec-04 .image', { delay: 900, origin: 'right' });
+        ScrollReveal().reveal('.info4', { delay: 1000, origin: 'bottom', interval: 200 });
+
+        // ==============================SECTION 05=============================
+        ScrollReveal().reveal('.sec-05 .image', { delay: 900, origin: 'left' });
+        ScrollReveal().reveal('.info5', { delay: 1000, origin: 'top', interval: 200 });
+
+        // ==============================SECTION 06=============================
+        ScrollReveal().reveal('.sec-06 .image', { delay: 900, origin: 'bottom ' });
+        ScrollReveal().reveal('.info6', { delay: 1000, origin: 'left', interval: 200 });
+
+        // ==============================SECTION 07=============================
+        ScrollReveal().reveal('.sec-07 .image', { delay: 900, origin: 'bottom ' });
+        ScrollReveal().reveal('.info7', { delay: 1000, origin: 'right', interval: 200 });
+
+        // ==============================SECTION 08=============================
+        ScrollReveal().reveal('.sec-08 .image', { delay: 900, origin: 'top ' });
+        ScrollReveal().reveal('.info8', { delay: 1000, origin: 'left', interval: 200 });
+
+
+
+    </script>
+
+</body>
+
+</html>
